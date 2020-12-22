@@ -3,12 +3,14 @@ package com.puterabaritoinnovation.loginui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
@@ -20,6 +22,7 @@ public class LoginaActivity extends AppCompatActivity {
     Spinner spinner;
     private CardView cardView;
     private Animation animation_fadein;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,16 @@ public class LoginaActivity extends AppCompatActivity {
 
         cardView = findViewById(R.id.cv);
         spinner = findViewById(R.id.choosebank);
+        button = findViewById(R.id.login_btn);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginaActivity.this, AdminActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         animation_fadein = AnimationUtils.loadAnimation(LoginaActivity.this, R.anim.fadein);
 

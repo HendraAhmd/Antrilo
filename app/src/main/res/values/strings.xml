@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">loginUI</string>
+    <string name="text2">Bergabunglah menjadi Merchant kami untuk membantu meningkatkan layanan pelanggan yang lebih optimal.</string>
+    <string name="text1">Antrilo adalah layanan antrian realtime online berbasis android, anda dapat memonitor antrian kapanpun dan dimanapun!</string>
 </resources>

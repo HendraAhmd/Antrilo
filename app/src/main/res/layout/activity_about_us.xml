@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AboutUsActivity">
+
+        <ImageView
+            android:id="@+id/aboutimg"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aboutus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/info_forms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popr"
+            android:lineSpacingExtra="9dp"
+            android:text="Better Time For You"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutimg" />
+
+        <TextView
+            android:id="@+id/aboutus_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popr"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginRight="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/text1"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_forms" />
+
+        <TextView
+            android:id="@+id/aboutus_txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popr"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginRight="@dimen/_24sdp"
+            android:text="@string/text2"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutus_txt1" />
+
+        <Button
+            android:id="@+id/contactus_btn"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="50dp"
+            android:background="@drawable/contactus_btn"
+            android:clickable="true"
+            android:fontFamily="@font/popm"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Contact Us"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutus_txt2" />
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_24sdp"
+            android:src="@drawable/roundlogo"
+            android:transitionName="logo"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contactus_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
